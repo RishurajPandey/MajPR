@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+            background-image: url(https://img.freepik.com/free-vector/blurred-bokeh-pattern-wallpaper-soft-touch-your-walls_1017-43483.jpg);
+            /* background-position: 100%; */
+        }
+
+        h3 {
+            margin-bottom: 500px;
+            /* Adjust this margin to accommodate the footer's height */
+        }
+
+        footer {
+            background-color: black;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            color: white;
+            /* display: none; */
+            height: 50px;
+            z-index: 1000;
+            overflow: scroll;
+        }
+
+        .footer-links ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        .footer-links ul li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3 style="font-size: 25px;">Welcome to CraftHaven, a digital haven for the artistry and craftsmanship that defines our local communities. At
+        CraftHaven, we celebrate the spirit of creativity by bringing together a diverse array of crafts and handmade
+        treasures, each telling a unique story of skill and passion. Our journey began with a simple yet profound belief
+        – that the rich tapestry of local artisans and craftspeople deserves a platform to shine. <br> <br> <br> <br> CraftHaven is more
+        than just a website; it's a vibrant marketplace where artisans from different corners of the world converge to
+        showcase their talent and connect with a community that appreciates the beauty of handmade wonders. Explore our
+        virtual marketplace to discover an enchanting collection of handmade crafts, from intricately woven textiles to
+        meticulously crafted ceramics. <br><br><br><br> CraftHaven is more than just a shopping destination; it's a celebration of the
+        extraordinary talents that thrive within our local communities. We take pride in fostering a supportive
+        environment for artisans, where their stories are heard, and their creations find homes that truly appreciate
+        the effort and love poured into each piece. CraftHaven is a meeting place for artisans and art enthusiasts
+        alike, a space where creativity knows no bounds. Join us on this journey of discovery and celebration as we
+        continue to champion the craft and artistry that makes each community unique. CraftHaven is not just a website;
+        it's a tribute to the hands that create, the stories that unfold, and the vibrant tapestry of cultures woven
+        together through the language of craft. Welcome to CraftHaven – where craftsmanship and community thrive!</h3>
+
+    <!-- Add more content here -->
+
+    <footer>
+        <div class="footer-links">
+            <ul>
+                <li><a href="#contact">Contact: 90912XXXXX</a></li>
+                <li><a href="#contact">crafthavenxxx@gmail.com</a></li>
+                <li><a href="#faqs">FAQs</a></li>
+                <li><a href="#terms-of-service">Terms of Service</a></li>
+                <li><a href="#privacy-policy">Privacy Policy</a></li>
+                &copy; CraftHaven
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            var h3Height = document.querySelector("h3").getBoundingClientRect().bottom;
+            var footer = document.querySelector("footer");
+
+            if (h3Height <= window.innerHeight) {
+                footer.style.display = "block";
+            } else {
+                footer.style.display = "none";
+            }
+        });
+    </script>
+</body>
+
+</html>
